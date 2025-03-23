@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+    <!-- 아이폰에서 자동 링크 인식 방지 -->
+    <meta name="format-detection" content="telephone=no">
+    <title>르엘 리버파크 센텀</title>
+
+    <!-- jquery library -->
+    <script src="/js/libs/jquery/1.12.4/jquery.js"></script>
+
+    <!-- rwdImageMaps library -->
+    <script src="/js/libs/jquery.rwdImageMaps.min.js"></script>
+
+    <!-- swiper library -->
+    <link rel="stylesheet" href="/js/libs/swiper/11.1.15/swiper.css">
+    <script src="/js/libs/swiper/11.1.15/swiper.min.js"></script>
+
+    <!-- fullpage library -->
+    <link rel="stylesheet" href="/js/libs/fullPage/2.9.7/fullpage.css">
+    <script src="/js/libs/fullPage/2.9.7/fullpage.js"></script>
+
+    <!-- vimeo -->
+    <script src="/js/libs/player.js"></script>
+
+    <!-- gsap library -->
+    <script src="/js/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- waypoints -->
+    <script src="/js/libs/waypoints.min.js"></script>
+
+    <script src="/js/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="/js/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+
+    <!-- css /js  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <script src="/js/global.js"></script> -->
+</head>
+<body>
+<div class="wrap main">
+    <div class="toggle_btn">
+        <button onclick="$('body').toggleClass('active');"><span>Active</span><strong>Default</span></button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="pop_content">
+            <div class="pop_close"><button onclick="$('#popup').removeClass('on');">팝업닫기 X</button></div>
+            <div class="pop_list">
+                <ul>
+                    <li><img src="/images/b968dadfa33532510bf3ca5485368827_1736903780_9629.jpg" alt=""></li>
+                    <li><img src="/images/b968dadfa33532510bf3ca5485368827_1736903960_2116.jpg" alt=""></li>
+                    <li><img src="/images/b968dadfa33532510bf3ca5485368827_1736904180_4243.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="pop_check">
+                <input type="checkbox" name="" id="">
+                <label for="">오늘 하루 이 창을 열지 않음</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="fullpage"> -->
+        <section class="section" id="sec1">
+			<div class="section_content vis">
+                <div class="pop_zone">
+                    <button onclick="$('#popup').addClass('on');"><img src="/images/pop-btn.jpg" alt=""></button>
+                </div>
+                                
+                <div class="motion_box">
+                    <div class="copy">
+                        <p>해운대 <strong>센텀시티,</strong> 부산 <strong>최초</strong>의 <strong>르엘</strong></p>
+                    </div>
+                    <div class="typo typo1">
+                        <p>
+                            <span class="t1">A</span>
+                            &nbsp;&nbsp;
+                            <span class="t2">N</span>
+                            <span class="t3">E</span>
+                            <span class="t4">W</span>
+                            &nbsp;&nbsp;
+                            <span class="t5">L</span>
+                            <span class="t6">E</span>
+                            <span class="t7">V</span>
+                            <span class="t8">E</span>
+                            <span class="t9">L</span>
+                        </p>
+                    </div>
+                    <div class="show_box">
+                        <div class="bg"></div>
+                        <div class="shadow_line"></div>
+                        <div class="line">
+                            <span class="l1"><img src="/images/vis-line1.png" alt=""></span>
+                            <span class="l2"><img src="/images/vis-line2.png" alt=""></span>
+                        </div>
+                        <div class="ball">
+                            <img src="/images/ball.png" alt="">
+                        </div>
+                    </div>
+                    <div class="typo typo2">
+                        <p>
+                            <span class="t10">O</span>
+                            <span class="t11">F</span>
+                            &nbsp;&nbsp;
+                            <span class="t12">L</span>
+                            <span class="t13">I</span>
+                            <span class="t14">V</span>
+                            <span class="t15">I</span>
+                            <span class="t16">N</span>
+                            <span class="t17">G</span>
+                        </p>
+                    </div>
+                </div>                
+			</div>
+        </section>
+        <section class="section" id="sec2">
+            <div class="section_content loc_val">
+				sec2 - loc_val
+			</div>
+        </section>
+        <section class="section" id="sec3">
+			<div class="section_content story">
+				sec3 - story
+			</div>
+        </section>
+        <section class="section" id="sec4">
+			<div class="section_content architecture">
+				sec4 - architecture
+			</div>
+        </section>
+        <section class="section" id="sec5">
+			<div class="section_content salon">
+				<div class="salon_tit">
+                    <div class="t1">FEEL THE BEST IN COMMUNITY</div>
+                    <div class="t2">
+                        <span class="d1">S</span>
+                        <span class="d1">A</span>
+                        <span class="d1">L</span>
+                        <span class="d1">O</span>
+                        <span class="d1">N</span> 
+                        <span class="d1">D</span>
+                        <span class="d1">E</span> 
+                        <span class="d1">L</span>
+                        <span class="d1">E</span> 
+                        <span class="d1">E</span>
+                        <span class="d1">L</span>
+                    </div>
+                </div>
+                <div class="salon_con">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+			</div>
+        </section>
+        <section class="section" id="sec6">
+			<div class="section_content salon_sd" id="num1">
+				<div class="big_img">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                    
+                    
+                            </div>
+                            <div class="swiper-slide">
+                    
+                    
+                            </div>
+                            <div class="swiper-slide">
+                    
+                    
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="thum_img">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="thum_tit"></div>
+                                <div class="thum_con"></div>                    
+                    
+                            </div>
+                            <div class="swiper-slide">
+                    
+                    
+                            </div>
+                            <div class="swiper-slide">
+                    
+                    
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+			</div>            
+        </section>		
+        <section class="section" id="sec7">            
+            <div class="section_content cf">  
+                <div class="cf_tit">
+                    <p><span>CF VIDEO</span></p>
+                </div>                            
+                <div class="typo">
+                    <div class="t t1">
+                        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 514.7 81.79">
+                            <polygon class="p" points="190.55 44.33 190.55 44.33 190.5 44.33 190.55 44.33"></polygon>
+                            <path class="p" d="M693.72,1463.51a15.5,15.5,0,0,0-5.77-3.13,24,24,0,0,0-6.93-1v-1a15.24,15.24,0,0,0,5-.83,12.23,12.23,0,0,0,4.35-2.58,11.89,11.89,0,0,0,3-4.67,23.43,23.43,0,0,0-.66-16,10.86,10.86,0,0,0-4.9-5,16.68,16.68,0,0,0-7.42-1.54h-3.08v67.32h5.06a19.53,19.53,0,0,0,8.74-1.87,13.41,13.41,0,0,0,5.94-5.83,21.13,21.13,0,0,0,2.15-10.12,20.61,20.61,0,0,0-1.49-8.25A15.29,15.29,0,0,0,693.72,1463.51Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M942.54,1430.51a22.9,22.9,0,0,0-26.84,0,27.6,27.6,0,0,0-8.75,12.27,59,59,0,0,0,0,37.62,27.59,27.59,0,0,0,8.75,12.27,22.9,22.9,0,0,0,26.84,0,27.25,27.25,0,0,0,8.69-12.27,60,60,0,0,0,0-37.62A27.26,27.26,0,0,0,942.54,1430.51Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M1136.2,1431.83a22.7,22.7,0,0,0-13.64-4.12h-13.64v67.76h13.64a22.7,22.7,0,0,0,13.64-4.12,26.1,26.1,0,0,0,8.8-11.71,54.37,54.37,0,0,0,0-36.08A26.1,26.1,0,0,0,1136.2,1431.83Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M708.57,1461.25a22.83,22.83,0,0,0-10-3.08,16,16,0,0,0,6.49-2.36,14.52,14.52,0,0,0,5-5.39,17.35,17.35,0,0,0,1.92-8.52q0-6.71-3.63-10.83a21.06,21.06,0,0,0-10-6.05,49.33,49.33,0,0,0-14.35-1.92H652.31v1.1h1.43a6.68,6.68,0,0,1,4.9,2,7.09,7.09,0,0,1,2.15,4.9v60.94a7.09,7.09,0,0,1-2.15,4.9,6.67,6.67,0,0,1-4.9,2h-1.43v1.1h34.87a49.53,49.53,0,0,0,16.23-2.42,23.26,23.26,0,0,0,10.83-7.21,18.26,18.26,0,0,0,3.85-11.83,20.39,20.39,0,0,0-2.53-10.34A19.21,19.21,0,0,0,708.57,1461.25ZM697,1487.43a13.41,13.41,0,0,1-5.94,5.83,19.53,19.53,0,0,1-8.74,1.87h-5.06v-67.32h3.08a16.68,16.68,0,0,1,7.42,1.54,10.86,10.86,0,0,1,4.9,5,23.43,23.43,0,0,1,.66,16,11.89,11.89,0,0,1-3,4.67,12.23,12.23,0,0,1-4.35,2.58,15.24,15.24,0,0,1-5,.83v1a24,24,0,0,1,6.93,1,15.5,15.5,0,0,1,5.77,3.13,15.29,15.29,0,0,1,4,5.56,20.61,20.61,0,0,1,1.49,8.25A21.13,21.13,0,0,1,697,1487.43Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M787.71,1487a20.45,20.45,0,0,1-7.15,6.16,20.92,20.92,0,0,1-9.68,2.15H756.48v-30.91H771a9.48,9.48,0,0,1,6.71,2.75,9,9,0,0,1,2.64,6.6v1h1.1v-25.3h-1.1v.88a9.14,9.14,0,0,1-2.64,6.66,9.36,9.36,0,0,1-6.71,2.81H756.48v-32H776a10.78,10.78,0,0,1,6.68,3.08,11.12,11.12,0,0,1,3,8.14v1.32h1.1V1421.1a16.45,16.45,0,0,1-3.3.88q-2.31.44-5,.77a42.15,42.15,0,0,1-5.12.33H731.5v1.1h1.43a6.68,6.68,0,0,1,4.9,2,7.09,7.09,0,0,1,2.15,4.9v60.94a7.08,7.08,0,0,1-2.15,4.9,6.67,6.67,0,0,1-4.9,2H731.5v1.1h57l5.06-22.44h-1.1A32.79,32.79,0,0,1,787.71,1487Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M856.46,1424.18h1.32a4.1,4.1,0,0,1,2.75,1,5.26,5.26,0,0,1,1.65,2.64,3.75,3.75,0,0,1-.55,3.13h0l-16.34,28.48-15.75-28.58a4.69,4.69,0,0,1,.21-4.46,4,4,0,0,1,3.68-2.25h1.43v-1.1H798.49v1.1H800a11.46,11.46,0,0,1,6.49,2,14.69,14.69,0,0,1,4.51,4.51h0l20.87,34.44v26.94a7.08,7.08,0,0,1-2.14,4.9,6.67,6.67,0,0,1-4.9,2h-1.43v1.1h33.33V1499h-1.32a6.85,6.85,0,0,1-4.95-2,6.58,6.58,0,0,1-2.09-4.9v-27.11L870,1430.67h.09a15.75,15.75,0,0,1,4.67-4.51,11.54,11.54,0,0,1,6.44-2h1.54v-1.1H856.46Zm-14.11,40.48h0Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M952,1426.44q-9.74-4.89-22.94-4.9t-22.94,4.9a35.48,35.48,0,0,0-15,13.86q-5.28,9-5.28,21.29t5.28,21.34a35.57,35.57,0,0,0,15,13.81q9.74,4.9,22.94,4.9t22.94-4.9a35.82,35.82,0,0,0,15.07-13.86q5.33-9,5.33-21.29t-5.33-21.34A36,36,0,0,0,952,1426.44Zm-.77,54a27.25,27.25,0,0,1-8.69,12.27,22.9,22.9,0,0,1-26.84,0,27.59,27.59,0,0,1-8.75-12.27,59,59,0,0,1,0-37.62,27.6,27.6,0,0,1,8.75-12.27,22.9,22.9,0,0,1,26.84,0,27.26,27.26,0,0,1,8.69,12.27,60,60,0,0,1,0,37.62Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M1063.15,1423.08H1039v1.1H1041a6.5,6.5,0,0,1,4.79,1.92,6.9,6.9,0,0,1,2,4.79v43.48l-55.55-52.94h-1.1a81,81,0,0,1,1.32,13.75v57.09a6.76,6.76,0,0,1-6.71,6.71h-2.09v1.1h33.33V1499H1015a6.76,6.76,0,0,1-6.71-6.71h0l-.08-43.59,55.64,52.94h1q-.66-3.52-1-6.77a72.81,72.81,0,0,1-.33-7.31v-56.65a6.79,6.79,0,0,1,2.09-4.79,6.55,6.55,0,0,1,4.73-1.92h2v-1.1h-9.13Z" transform="translate(-651.81 -1420.33)"></path>
+                            <path class="p" d="M1146.31,1427.76q-9.46-4.67-22.44-4.67h-39.93l.11,1.1h1.32a6.86,6.86,0,0,1,4.95,2,6.59,6.59,0,0,1,2.09,4.9v60.94a7.09,7.09,0,0,1-2.15,4.9,6.67,6.67,0,0,1-4.9,2h-1.43v1.1h39.93q13,0,22.44-4.67a34,34,0,0,0,14.58-13.31q5.12-8.63,5.12-20.52t-5.12-20.52A34,34,0,0,0,1146.31,1427.76Zm-1.32,51.87a26.1,26.1,0,0,1-8.8,11.71,22.7,22.7,0,0,1-13.64,4.13h-13.64V1427.7h13.64a22.7,22.7,0,0,1,13.64,4.13,26.1,26.1,0,0,1,8.8,11.71,54.37,54.37,0,0,1,0,36.08Z" transform="translate(-651.81 -1420.33)"></path>
+                        </svg>
+                    </div>
+                    <div class="t t2">
+                        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 540.99 82.56">
+                            <path class="p" d="M1287.88,1468q-1.76,10.78-5.33,17.16a21.07,21.07,0,0,1-9.4,9.13,33.37,33.37,0,0,1-14.3,2.75,24.38,24.38,0,0,1-14.14-4.62,28,28,0,0,1-9.24-12.32,49.46,49.46,0,0,1-3.25-18.81q0-10.89,3.41-18.7a27.61,27.61,0,0,1,9.68-12.1,26,26,0,0,1,15.07-4.29,26.83,26.83,0,0,1,15.73,4.67q6.71,4.68,9.68,15.56h1l-.22-18.81a49.58,49.58,0,0,0-11.61-4.29,64.81,64.81,0,0,0-15.79-1.76q-14,0-24,4.84a35.45,35.45,0,0,0-15.46,13.81q-5.39,9-5.39,21.29,0,12.65,5.5,21.56a35.91,35.91,0,0,0,15.57,13.69q10.06,4.78,23.49,4.9a45,45,0,0,0,14.3-2,32.21,32.21,0,0,0,10.12-5.33,27.81,27.81,0,0,0,6.49-7.37l-1-18.92Z" transform="translate(-1213.79 -1420.22)"/>
+                            <path class="p" d="M1361.14,1487a20.46,20.46,0,0,1-7.15,6.16,20.92,20.92,0,0,1-9.68,2.15H1329.9v-30.91h14.52a9.48,9.48,0,0,1,6.71,2.75,9,9,0,0,1,2.64,6.6v1h1.1v-25.3h-1.1v.88a9.14,9.14,0,0,1-2.64,6.66,9.36,9.36,0,0,1-6.71,2.81H1329.9v-32h19.55a10.78,10.78,0,0,1,6.68,3.08,11.12,11.12,0,0,1,3,8.14v1.32h1.1V1421.1a16.44,16.44,0,0,1-3.3.88q-2.31.44-5,.77a42.15,42.15,0,0,1-5.12.33h-41.91v1.1h1.43a6.68,6.68,0,0,1,4.89,2,7.09,7.09,0,0,1,2.15,4.9v60.94a7.08,7.08,0,0,1-2.15,4.9,6.67,6.67,0,0,1-4.89,2h-1.43v1.1h57l5.06-22.44h-1.1A32.8,32.8,0,0,1,1361.14,1487Z" transform="translate(-1213.79 -1420.22)"/>
+                            <path class="p" d="M1457.61,1423.08h-24.2v1.1h2.09a6.5,6.5,0,0,1,4.79,1.92,6.9,6.9,0,0,1,2,4.79v43.48l-55.55-52.94h-1.1a81,81,0,0,1,1.32,13.75v57.09a6.76,6.76,0,0,1-6.71,6.71h-2.09v1.1h33.33V1499h-2.09a6.76,6.76,0,0,1-6.71-6.71h0l-.08-43.59,55.64,52.94h1q-.66-3.52-1-6.77a72.67,72.67,0,0,1-.33-7.31v-56.65a6.79,6.79,0,0,1,2.09-4.79,6.55,6.55,0,0,1,4.73-1.92h2v-1.1h-9.13Z" transform="translate(-1213.79 -1420.22)"/>
+                            <path class="p" d="M1539.18,1422.64a42.24,42.24,0,0,1-5.11.33H1490.5a42.74,42.74,0,0,1-5.06-.33q-2.75-.33-5-.77a19.81,19.81,0,0,1-3.36-.88v19.25l1.1-.11v-1.21a11.07,11.07,0,0,1,3-8.19,11.3,11.3,0,0,1,8.08-3.14H1504v64.46a7.08,7.08,0,0,1-2.15,4.9,6.67,6.67,0,0,1-4.89,2h-1.43v1.1H1529V1499h-1.43a6.67,6.67,0,0,1-4.9-2,7.07,7.07,0,0,1-2.14-4.9v-64.46h14.63a11.45,11.45,0,0,1,8.2,3.14,11.08,11.08,0,0,1,3,8.19v1.21l1.1.11V1421a16.48,16.48,0,0,1-3.3.88Q1541.87,1422.31,1539.18,1422.64Z" transform="translate(-1213.79 -1420.22)"/>
+                            <path class="p" d="M1633.5,1423.08h-15.29v1.1H1620a5.94,5.94,0,0,1,4.13,1.54,5.1,5.1,0,0,1,1.71,4v43.23a28.71,28.71,0,0,1-2.64,12.76,19.27,19.27,0,0,1-7.54,8.31,22.26,22.26,0,0,1-11.6,2.92,20.58,20.58,0,0,1-11.39-3.08,19.87,19.87,0,0,1-7.37-8.8,32.6,32.6,0,0,1-2.58-13.53v-41.8a5.09,5.09,0,0,1,1.7-4,5.94,5.94,0,0,1,4.13-1.54h1.76v-1.1h-31.68v1.1h1.76a6,6,0,0,1,4.13,1.54,5.1,5.1,0,0,1,1.71,4v42.68a29.17,29.17,0,0,0,4,15.57,26,26,0,0,0,12,10.12q8,3.57,19.69,3.58,10,0,17.1-3.58a25.42,25.42,0,0,0,10.89-10.17,30.8,30.8,0,0,0,3.79-15.62v-42.57a5.09,5.09,0,0,1,1.71-4,5.94,5.94,0,0,1,4.13-1.54h1.76v-1.1h-7.81Z" transform="translate(-1213.79 -1420.22)"/>
+                            <path class="p" d="M1752.52,1499a8.16,8.16,0,0,1-5.17-1.81,7.79,7.79,0,0,1-2.79-4.83l-9.42-70.79h-1l-32.7,56.13-34.18-56.13h-1l-9.09,70.51h0a7.46,7.46,0,0,1-2.75,5.11,8.31,8.31,0,0,1-5.28,1.81h-1.76v1.1h23.1v-1h-1.76a3.85,3.85,0,0,1-3-1.48,4.89,4.89,0,0,1-1.27-3.25V1494l4.28-39.23,28.28,47.48h1.1a15.37,15.37,0,0,1,1-5.5,48.57,48.57,0,0,1,3.25-6.6l20.57-35.66,4.29,39.5h0v.33a5,5,0,0,1-1.21,3.25,3.8,3.8,0,0,1-3.08,1.48h-1.65v1h33V1499Z" transform="translate(-1213.79 -1420.22)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="vid">
+                    <video src="/video/cf.mp4"></video>
+                </div>
+                <div class="txt_copy">
+                    <p>당신이 침묵해도 모두가 경탄하는, 르엘 리버파크 센텀</p>
+                </div>
+			</div>
+        </section>
+        <section class="section" id="sec8">
+			<div class="section_content gallery">	
+                <div class="gallery_tit">
+                    <p><span>gallery & contact</span></p>
+                </div>
+                <div class="gallery_map">
+                    <ul>
+                        <li>            
+                            <dl>
+                                <dt><div class="img"><img src="/images/gallery1.jpg" alt="" class="map_img"></div></dt>
+                                <dd>
+                                    <div class="map_address">
+                                        <address>
+                                            <span>현장.</span> <strong>부산광역시 해운대구 재송동 856-6번지 일원</strong>
+                                        </address>
+                                    </div>
+                                    <div class="map_link">
+                                        <a href=""><img src="/images/gallery-icon1.png" alt="" class="icon_map_link"></a>
+                                        <a href=""><img src="/images/gallery-icon2.png" alt="" class="icon_map_link"></a>
+                                    </div>
+                                </dd>
+                            </dl>           
+                        </li>
+                        <li>            
+                            <dl>
+                                <dt><div class="img"><img src="/images/gallery2.jpg" alt="" class="map_img"></div></dt>
+                                <dd>
+                                    <div class="map_address">
+                                        <address>
+                                            <span>갤러리.</span> <strong>부산광역시 해운대구 우동 1406-8번지</strong>
+                                        </address>
+                                    </div>
+                                    <div class="map_link">
+                                        <a href=""><img src="/images/gallery-icon1.png" alt="" class="icon_map_link"></a>
+                                        <a href=""><img src="/images/gallery-icon2.png" alt="" class="icon_map_link"></a>
+                                    </div>
+                                </dd>
+                            </dl>           
+                        </li>        
+                    </ul>
+                </div>
+			</div>
+        </section>
+        <section class="section fp-auto-height" id="sec9">
+            <footer>
+                <div class="footer_inner">
+                    <div class="go_top" id="go_top"><a href="javascript:;" class="btn_top"><span><img src="/images/top-arr.png" alt=""></span></a></div>
+                    <div class="footer_top">
+                        <div class="footer_logo"><img src="/images/footer-logo.svg" alt=""></div>
+                        <div class="corp">
+                            <ul>
+                                <li><span>시행위탁자.</span><strong>(주)백송홀딩스</strong></li>
+                                <li><span>시행수탁자.</span><strong>(주)하나자산신탁</strong></li>
+                                <li><span>시공사.</span><strong>롯데건설(주)</strong></li>
+                                <li><span>분양대행사.</span><strong>(주)제이앤제이플래닝, 지우알엔씨(주), (주)마켓리더</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_content">
+                        <div class="address">
+                            <p>
+                                <span><strong>시행위탁자</strong> : (주)백송홀딩스</span>
+                                <span>대표 : 박정삼</span>
+                                <span>주소: 부산광역시 해운대구 센텀 중앙로 97, 4007호(재송동, 센텀 스카이비즈)</span>
+                                <span>사업자등록번호: 710-86-00907</span>
+                            </p>
+                            <p>
+                                <span><strong>온라인 광고 대행사</strong> : (주)넥스미디어</span>      
+                                <span>주소 : 경기도 성남시 분당구 미금일로90번길 32, 웰파크 3층</span>
+                                <span>사업자등록번호 : 462-81-00186</span>
+                            </p>
+                        </div>
+                        <div class="foot_summary">
+                            <ul>
+                                <li>※ 홈페이지에 포함된 모든 CG 및 영상, 이미지, 그림, 내용 등은 소비자의 이해를 돕기 위해 일부 개발 예정 자료이거나 시행까지 개략적으로 표현 및 설명한 것으로 실제와 다를 수 있으며, 사업진행 및 인·허가 과정에서 변경될 수 있습니다.</li>
+                                <li>※ 사업지 인근 원형육교의 CG와 동해선 전철 재송역 주변 선하지의 CG 및 이미지 등은 소비자의 이해를 돕기 위해 제작된 것으로 이를 근거로 관계부처, 시행사, 시공사 등에게 이의를 제기하거나 민, 형사상 소송자료로 사용할 수 없으며, 추후 관계부처와의 협의결과에 따라 계획이 변경될 수 있습니다.</li>
+                                <li>※ 본 홈페이지에 포함된 모든 CG 및 영상, 이미지, ISO, 그림 등은 소비자의 이해를 돕기 위한 이미지로 시공되는 외관, 실내의 마감 및 창호, 천정고 등 실제와 상이하므로 견본주택을 참조하시기 바랍니다.</li>
+                                <li>※ 본 홈페이지에 포함된 모든 CG 및 영상, 이미지, 내용을 근거로 시행사, 시공사, 업무대행사 등 유관 사업체에게 이의를 제기하거나 민·형사상 소송자료로 사용할 수 없습니다.</li>
+                            </ul>						
+                        </div>
+                    </div>
+                    <div class="footer_util">
+                        <div class="copyright"><p>Copyright©2024 르엘 리버파크 센텀 . All Rights Reserved.</p></div>
+                        <div class="privacy"><button class="btn_privacy" popovertarget="privacy_layer">개인정보 취급방침</button></div>
+                    </div>
+                	
+				</div>
+            </footer>
+        </section>
+    </div><!-- //fullpage -->
+</div><!-- //wrap -->
+<div class="privacy_layer" id="privacy_layer" popover>
+    <div class="privacy_inner">
+        <div class="btn_layer_close"><a href=""><span>닫기</span></a></div>
+        <div class="privacy_content">
+            <fieldset>
+                <legend>르엘 리버파크 센텀 홈페이지<br> 개인정보 처리방침</legend>
+                <div class="con_list">
+                    <ol>
+                        <li><a href="#privacy_rule01">1. 개인정보의 수집 및 이용목적</a></li>
+                        <li><a href="#privacy_rule02">2. 수집하는 개인정보 항목 및 수집 방법</a></li>
+                        <li><a href="#privacy_rule03">3. 개인정보의 보유 및 이용기간</a></li>
+                        <li><a href="#privacy_rule04">4. 개인정보의 파기절차 및 방법</a></li>
+                        <li><a href="#privacy_rule05">5. 개인정보의 제공</a></li>
+                        <li><a href="#privacy_rule06">6. 수집한 개인정보의 위탁</a></li>
+                        <li><a href="#privacy_rule07">7. 이용자 및 법정대리인의 권리와 그 행사방법</a></li>
+                        <li><a href="#privacy_rule08">8. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</a></li>
+                        <li><a href="#privacy_rule09">9. 개인정보의 기술적/관리적 보호 대책</a></li>
+                        <li><a href="#privacy_rule010">10. 개인정보에 관한 민원서비스</a></li>
+                        <li><a href="#privacy_rule011">11. 고지의 의무</a></li>
+                    </ol>
+                </div>
+                <div class="privacy_summary">
+                    <p>
+                        르엘 리버파크 센텀  홈페이지를 방문해주셔서 대단히 감사합니다.<br>
+                        르엘 리버파크 센텀  홈페이지(이하 ‘당 홈페이지’라 함)는 이용고객의 개인정보를 무엇보다 중요하게 생각하고, 이용고객이 안심하고 이용할 수 있도록 개인정보 보호에 최선을 다하고 있습니다.
+                    </p>
+                    <p>당 홈페이지는 「개인정보 보호법」등에 따라 개인정보처리방침을 아래와 같이 수립하여 시행하고 있습니다.</p>
+                    <p class="txt-right">* 2024년 10월 25일부터 시행됩니다.</p>
+                </div>
+                <div class="privacy_con" id="privacy_rule01">
+                    <h3>1. 개인정보 수집 및 이용목적</h3>
+                    <p>당 홈페이지는 분양홍보 서비스를 제공하기 위하여 최소한의 개인정보를 처리하고 있습니다. 처리하고 있는 개인정보는 다음의 서비스를 제공 목적 이외의 용도로는 이용되지 않으며, 이용목적이 변경될 경우에는 개인정보보호법에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+                    <p>- 르엘 리버파크 센텀 관심고객에 대한 분양정보 제공 및 이벤트 활용</p>
+                </div>
+                <div class="privacy_con" id="privacy_rule02">
+                    <h3>2. 수집하는 개인정보 항목 및 수집 방법</h3>
+                    <p>당 홈페이지는 분양홍보 서비스를 위해 필요한 최소한의 범위 내에서 아래와 같은 개인정보를 수집하고 있습니다.</p>
+                    <ul class="list">
+                        <li>
+                            <strong>1) 수집 항목</strong>
+                            <dl>
+                                <dt>[필수 정보]</dt>
+                                <dd>성명, 휴대전화, 관심 평형</dd>
+                            </dl>
+                        </li>
+                        <li>
+                        <strong>2) 수집 방법</strong>
+                        <p>르엘 리버파크 센텀 홈페이지 관심고객 등록</p>
+                            </li>
+                            <li>서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.</li>
+                            <li>IP 주소, 서비스 이용 기록, 접속로그, 쿠키, 불량 이용 기록</li>
+                    </ul>
+                </div>
+                <div class="privacy_con" id="privacy_rule03">
+                    <h3>3. 개인정보의 보유 및 이용기간</h3>
+                    <p>원칙적으로 개인정보 수집 및 이용목적 달성 및 보유기간이 만료된 후에는 해당 정보를 지체 없이 파기합니다.</p>
+                    <p>※ 관심고객 등록시 개인정보 수집일로부터 후 2년간 보유 후 지체없이 파기</p>
+                </div>
+                <div class="privacy_con" id="privacy_rule04">
+                    <h3>4. 개인정보의 파기절차 및 방법</h3>
+                    <p>당 홈페이지는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 보유 및 이용기간에 따라 해당 정보를 파기합니다. 파기절차 및 방법은 다음과 같습니다.</p>
+                    <dl>
+                        <dt>- 파기절차</dt>
+                        <dd>이용자가 관심단지 등록 및 고객문의를 위해 제공하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다. 별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.</dd>
+                        <dt>- 파기방법</dt>
+                        <dd>전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제하며, 서면양식에 기재하거나 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</dd>
+                    </dl>
+                </div>
+                <div class="privacy_con" id="privacy_rule05">
+                    <h3>5. 개인정보의 제공</h3>
+                    <p>당 홈페이지는 이용자의 개인정보를 "개인정보의 수집 및 이용목적"에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 원칙적으로 이용자의 개인정보를 제 3 자 또는 목적외로 제공하지 않습니다. <br>다만, 아래의 경우에는 예외로 합니다.</p>
+                    <ul class="list">
+                        <li>이용자가 사전에 동의한 경우</li>
+                        <li>서비스의 제공에 관한 계약의 이행을 위하여 필요한 개인정보로서 경제적/기술적인 사유로 동의를 받는 것이 현저히 곤란한 경우</li>
+                        <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+                        <li>통계작성, 학술연구, 시장조사를 위해 특정 개인을 식별할 수 없는 형태로 가공하여 제공하는 경우</li>
+                    </ul>
+                </div>
+                <div class="privacy_con" id="privacy_rule06">
+                    <h3>6. 수집한 개인정보의 위탁</h3>
+                    <p>당 홈페이지는 서비스 이행을 위해 아래와 같이 이용자의 개인정보를 외부 전문업체에 위탁하여 운영하고 있으며, 관계 법령에 따라 위탁계약 시 개인정보보호의 안전을 기하기 위하여 개인정보보호 관련 지시 엄수, 개인정보에 관한 금지 및 사고 시의 책임부담 등을 명확히 규정하며 이를 준수하도록 관리하고 있습니다. 업체가 변경될 경우, 당 홈페이지는 변경된 업체명을 개인정보처리방침에 공지합니다.</p>
+                    <table class="common_tb_row">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="50%">
+                            <col width="50%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">위탁 받는자(수탁자)</th>
+                                <th scope="col">위탁하는 업무내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>롯데건설㈜</td>
+                                <td>분양마케팅 관리</td>
+                            </tr>
+                            <tr>
+                                <td>㈜참콤<br>㈜히어앤나우(㈜참콤의 재위탁 업체)<br></td>
+                                <td>분양 홍보, 홈페이지 관리 및 운영, 시스템 운영 및 유지관리</td>
+                            </tr>
+                            <tr>
+                                <td>지우알엔씨(주), ㈜마켓리더, ㈜제이앤제이플래닝</td>
+                                <td>분양마케팅 업무대행(안내, 상담, 기타 서비스 등)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>당 홈페이지는 위탁계약 체결시 개인정보보호법 제26조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적/관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리/감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다. 또한 수탁자를 교육하고 감독한 결과에 대한 기록을 남기고 문제점이 발견된 경우에는 필요한 보안조치를 하고 있습니다. 만약 재위탁을 하는 경우가 발생하게 된다면, 적법한 절차를 취하도록 하겠습니다.</p>    
+                </div>
+                <div class="privacy_con" id="privacy_rule07">
+                    <h3>7. 이용자 및 법정대리인의 권리와 그 행사방법</h3>
+    
+                    <h4>1) 개인정보의 열람, 정정, 삭제, 처리정지, 동의철회</h4>
+                    <p>이용자는 개인정보보호 담당부서를 통하여 가능한 모든 사항을 처리할 수 있습니다.</p>
+                    <p>당 홈페이지는 이용자가 본인의 개인정보 이용내역, 위탁내용, 제3자 제공 내용에 대한 열람· 증명 또는 정정을 요구하는 경우에는 영업일 기준 10일 이내에 이용자께서 회신 받길 원하는 방법에 따라 회신하도록 하겠습니다. 다만 요구되는 개인정보에 따라 연장될 수 있으며 연장될 경우 연장 사유를 통지하도록 하겠습니다.</p>
+                    <p>다만 정보주체의 열람 및 제공 요구 시 타 법률에 따라 열람이 금지되거나 제한된 경우 또는 다른 사람의 생명, 신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우에는 그 사유를 알리고 열람을 제한하거나 거절할 수 있음을 알려드립니다.</p>
+                    <p>고객님이 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 조치하겠습니다.</p>
+                    <p>이용자 및 정보주체는 개인정보의 열람, 정정, 삭제, 이용내역 확인, 처리정지 및 동의철회 요청은 「개인정보 처리 방법에 관한 고시 별지 제8호, 제9호, 제10호, 제11호 서식」에 따라 진행하실 수 있습니다.</p>
+                    <p>당 홈페이지는 이용자 및 법정대리인의 권리와 그 행사방법에 대한 사항은 개인정보보호법 제35조 ~ 제38조 사항을 따르고 있습니다.</p>
+                    <h4>2) 당 홈페이지는 만 19세 미만의 고객정보는 원칙적으로 수집하지 않습니다.</h4>
+                    <h4>3) 기타</h4>
+                    <p>이용자는 개인정보를 정확하게 입력하여 불의의 사고를 예방하여 주시기 바랍니다. 이용자가 직접 입력한 부정확한 정보로 인하여 발생하는 사고의 책임은 이용자 자신에게 있으며 타인 정보의 도용 등 허위정보를 입력할 경우 서비스 이용에 제한이 될 수 있습니다.</p>
+                    <p>이용자는 개인정보를 보호받을 권리와 함께 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 가지고 있습니다. 이용자의 개인정보가 유출되지 않도록 유의하여 주십시오. 만약이 같은 책임을 다하지 못하고 타인 정보의 도용이나 침해, 허위정보를 입력하는 경우 서비스 해지 및 관련법령에 의하여 처벌받을 수 있습니다.</p>
+    
+                </div>
+                <div class="privacy_con" id="privacy_rule08">
+                    <h3>8. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</h3>
+                    <p>홈페이지에서 제공하는 인터넷 서비스를 통하여 당 홈페이지는 이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)' 등을 운용합니다. 쿠키란 홈페이지를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다.</p>
+                    <p>고객은 쿠키 이용에 대한 선택권을 가지고 있으며 웹브라우저 설정을 통해 쿠키의 이용을 허용하거나 거부할 수 있습니다. 단, 쿠키의 저장을 거부하는 옵션을 선택하는 경우 서비스 이용에 불편이 야기될 수 있습니다.</p>
+                    <h4>쿠키의 설치 및 운영 거부 방법</h4>
+                    <h5>(1) 인터넷 익스플로러(Windows 10용 Internet Explorer11)</h5>
+                    <ul>
+                        <li>- Internet Explorer에서 도구 버튼을 선택한 다음 인터넷 옵션을 선택 </li>
+                        <li>- 개인 정보 탭을 선택하고 설정에서 고급을 선택한 다음 쿠키의 차단 또는 허용을 선택 </li>
+                    </ul>
+                    <h5>(2) Microsoft Edge - Edge에서 오른쪽 상단 '...'표시를 클릭한 후, 설정을 클릭합니다.</h5>
+                    <ul>
+                        <li>- 설정 페이지 좌측의 '개인정보, 검색 및 서비스'를 클릭 후 「추적방지」 섹션에서 '추적방지' 여부 및 수준을 선택합니다.</li>
+                        <li>- 'InPrivate를 검색할 때 항상 "엄격" 추적 방지 사용' 여부를 선택합니다.</li>
+                        <li>- 아래 「개인정보」섹션에서 '추적 안함 요청보내기' 여부를 선택합니다. </li>
+                    </ul>
+                    <h5>(3) 크롬 브라우저 - Chrome에서 오른쪽 상단 ':' 표시(chrome 맞춤설정 및 제어)를 클릭한 후 설정 표시를 클릭합니다. </h5>
+                    <ul>
+                        <li>- 설정 페이지 좌측의 '개인 정보 보호 및 보안'을 클릭하고 「서드 파티 쿠키」 섹션을 클릭합니다.</li>
+                        <li>- 서드 파티 쿠키 섹션에서 '서드 파티 쿠키 차단'에 체크합니다. </li>
+                        <li>- "탐색 트래픽과 함께 'Do Not Track' 요청 전송" 여부를 선택합니다.</li>
+                    </ul>
+                </div>
+                <div class="privacy_con" id="privacy_rule09">
+                    <h3>9. 개인정보의 기술적/관리적 보호 대책</h3>
+                    <p>당 홈페이지는 이용자의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 유출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적, 관리적 대책을 강구하고 있습니다.</p>    
+                    <p>이용자의 개인정보는 비밀번호에 의해 보호되며, 파일 및 전송 데이터를 암호화하거나 파일 잠금기능(Lock)을 사용하여 중요한 데이터는 별도의 보안기능을 통해 보호되고 있습니다.</p>
+                    <p>당 홈페이지는 백신프로그램을 이용하여 컴퓨터 바이러스에 의한 피해를 방지하기 위한 조치를 취하고 있습니다. 백신프로그램은 주기적으로 업데이트 되며 갑작스런 바이러스가 출현할 경우 백신이 나오는 즉시 이를 제공함으로써 개인정보가 침해되는 것을 방지하고 있습니다.</p>
+                    <p>당 홈페이지는 암호알고리즘을 이용하여 네트워크 상의 개인정보를 안전하게 전송할 수 있는 보안장치를 채택하고 있습니다.</p>
+                    <p>해킹 등에 의해 이용자의 개인정보가 유출되는 것을 방지하기 위해, 외부로부터의 침입을 차단하는 장치를 이용하여 24시간 침입을 감시하고 있습니다. 당 홈페이지는 개인정보의 안전성 확보를 위해 상위에 명시된 대책 이외 내부관리계획 수립 및 시행, 정기적인 직원 교육, 물리적 접근통제 등을 조치하고 있습니다.</p>
+                </div>
+                <div class="privacy_con" id="privacy_rule10">
+                    <h3>10. 개인정보에 관한 민원서비스</h3>
+                    <p>당 홈페이지는 이용자의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보 보호책임자 및 개인정보관리 담당자를 지정하고 있습니다.</p>
+                    <table class="common_tb_row">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="40%">
+                            <col width="40%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">개인정보보호 책임자</th>
+                                <th scope="col">개인정보관리 담당자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>성명</th>
+                                <td>김보배</td>
+                                <td>허신영</td>
+                            </tr>
+                            <tr>
+                                <th>전화</th>
+                                <td>010-7752-4501</td>
+                                <td>051-627-1560</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>bobae0308@chcm.co.kr</td>
+                                <td>heosy@chcm.co.kr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>이용자는 당 홈페이지의 서비스를 이용하며 발생하는 모든 개인정보보호 관련 민원을 개인정보 관리담당자 혹은 담당부서로 신고하실 수 있습니다. 당 홈페이지는 이용자의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.</p>
+                    <ul class="list">
+                        <li>개인정보침해신고센터 (http://privacy.kisa.or.kr / 국번없이 118)</li>
+                        <li>개인정보분쟁조정위원회 (http://kopico.go.kr / 1833-6972)</li>
+                        <li>대검찰청 사이버수사과 (http://spo.go.kr / 국번없이 1301)</li>
+                        <li>경찰청 사이버안전국 (http://ecrm.police.go.kr / 국번없이 182)</li>
+                    </ul>
+                </div>
+                <div class="privacy_con" id="privacy_rule11">
+                    <h3>11. 고지의 의무</h3>
+                    <p>법령/정책 또는 보안기술의 변경에 따라 내용의 추가, 삭제 및 수정이 있을 시에는 변경되는 개인정보보호정책을 시행하기 최소 10일전에 홈페이지를 통해 변경 이유 및 내용 등을 공지하도록 하겠습니다.</p>
+                    <p>• 개인정보취급방침 버전번호 : v.1.0</p>
+                    <p>• 개인정보취급방침 시행일자 : 2024.10.25</p>
+                    <p>• 개인정보취급방침 최종변경일자 : 2024.10.25</p>    
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+</body>
+</html>

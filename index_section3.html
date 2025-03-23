@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+    <!-- 아이폰에서 자동 링크 인식 방지 -->
+    <meta name="format-detection" content="telephone=no">
+    <title>르엘 리버파크 센텀</title>
+
+    <!-- jquery library -->
+    <script src="/js/libs/jquery/1.12.4/jquery.js"></script>
+
+    <!-- rwdImageMaps library -->
+    <script src="/js/libs/jquery.rwdImageMaps.min.js"></script>
+
+    <!-- swiper library -->
+    <link rel="stylesheet" href="/js/libs/swiper/11.1.15/swiper.css">
+    <script src="/js/libs/swiper/11.1.15/swiper.min.js"></script>
+
+    <!-- fullpage library -->
+    <link rel="stylesheet" href="/js/libs/fullPage/2.9.7/fullpage.css">
+    <script src="/js/libs/fullPage/2.9.7/fullpage.js"></script>
+
+    <!-- vimeo -->
+    <script src="/js/libs/player.js"></script>
+
+    <!-- gsap library -->
+    <script src="/js/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- waypoints -->
+    <script src="/js/libs/waypoints.min.js"></script>
+
+    <script src="/js/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="/js/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+
+    <!-- css /js  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <script src="/js/global.js"></script> -->
+</head>
+<body>
+<div class="wrap main">
+    <section class="section" id="sec3">
+        <div class="section_content story">
+            <div class="txt_page move">
+                <ul>
+                    <li>
+                        <div class="t t1">
+                            <p class="letter end">
+                                <em>P</em>
+                                <em>E</em>
+                                <em>A</em>
+                                <em>K</em>
+                            </p>
+                        </div>
+                        <div class="hover_box">
+                            <div class="ho">
+                                <div class="bg"></div>
+                                <div class="txt">
+                                    <p>2070세대, 67층</p>
+                                </div>
+                                <div class="link">
+                                    <a href=""><span>click</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                       
+                </ul>
+            </div>
+
+            <!--
+            <div class="story_sd">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sd1">
+                        <div class="vd">
+                            <video id="story_vd1" muted background playsinline loop preload="auto" crossorigin="anonymous">
+                                <source src="/video/story1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sd2">
+                        <div class="vd">
+                            <video id="story_vd2" muted background playsinline loop preload="auto" crossorigin="anonymous">
+                                <source src="/video/story2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sd3">
+                        <div class="vd">
+                            <video id="story_vd3" muted background playsinline loop preload="auto" crossorigin="anonymous">
+                                <source src="/video/story3.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sd4">
+                        <div class="vd">
+                            <video id="story_vd4" muted background playsinline loop preload="auto" crossorigin="anonymous">
+                                <source src="/video/story4.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>            
+                </div>
+            </div>-->
+        </div>        
+    </section>
+</div><!-- //wrap -->
+<script>
+$(document).ready(function() {
+    setTimeout(function() {
+        $("body").addClass("fp-viewing-2")
+    }, 500);
+
+    $(".txt_page.move ul li").on("mouseenter", function() {
+        var ho = $(this).find('.ho');
+        gsap.to(ho, {
+            duration: 0.8,
+            transform: 'translate(0%, 0%)',  // translate 애니메이션
+            ease: "power1.out",
+        });
+    });
+
+    $(".txt_page.move ul li").on("mouseleave", function() {
+        console.log("mouseleave");
+        var ho = $(this).find('.ho');
+        gsap.to(ho, {
+            duration: 0.8,
+            transform: 'translate(0%, 101%)',  // 마우스가 떠나면 원래 위치로 돌아가도록 애니메이션
+            ease: "power1.out",
+        });
+    });
+});
+	
+
+</script>
+</body>
+</html>

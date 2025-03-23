@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+    <!-- 아이폰에서 자동 링크 인식 방지 -->
+    <meta name="format-detection" content="telephone=no">
+    <title>르엘 리버파크 센텀</title>
+
+    <!-- jquery library -->
+    <script src="js/libs/jquery/1.12.4/jquery.js"></script>
+
+    <!-- fullpage library -->
+    <link rel="stylesheet" href="js/libs/fullPage/2.9.7/fullpage.css">
+    <script src="js/libs/fullPage/2.9.7/fullpage.js"></script>
+
+
+
+    <!-- css /js  -->
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <!-- <script src="/js/global.js"></script> -->
+</head>
+<body>
+<div id="fullpage">
+    <section class="section section1">sec1</section>
+    <section class="section section2">sec2</section>
+    <section class="section section3">sec3</section>
+    <section class="section section4">sec4</section>
+    <section class="section section5">sec5</section>
+    <section class="section section6 fp-auto-height">
+        <footer style="background:#222;">
+            <div class="footer_con">
+            푸터
+            </div>
+        </footer>
+    </section>
+</div>
+<script>
+    $('#fullpage').fullpage({
+    
+        autoScrolling: true,   // 자동 스크롤 활성화
+        scrollHorizontally: false,  // 세로 스크롤만 활성화
+        scrollOverflow: true,  // 오버플로우 설정 (스크롤 영역이 생길 때 필요)
+        navigation: true,      // 내비게이션 활성화 (각 섹션에 대한 내비게이션)
+        navigationPosition: 'right',  // 내비게이션 위치
+    
+     });
+    
+
+    
+</script>
+</body>
+</html>
