@@ -1,91 +1,77 @@
-@charset "utf-8";
-
 /* 
   icon font style import
 */
-
 @import url("font/icon/linearicons.css");
 @import url("font/icon/font-awesome.min.css");
-
 /* SUIT */
 @font-face {
-	font-family: 'SUIT';
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/SUIT/SUIT-Regular.woff2') format('woff2'),
-		url('font/SUIT/SUIT-Regular.otf') format('opentype');
+  font-family: "SUIT";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/SUIT/SUIT-Regular.woff2") format("woff2"), url("font/SUIT/SUIT-Regular.otf") format("opentype");
 }
 @font-face {
-	font-family: 'SUIT';
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/SUIT/SUIT-Medium.woff2') format('woff2'),
-		url('font/SUIT/SUIT-Medium.otf') format('opentype');
+  font-family: "SUIT";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/SUIT/SUIT-Medium.woff2") format("woff2"), url("font/SUIT/SUIT-Medium.otf") format("opentype");
 }
 @font-face {
-	font-family: 'SUIT';
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/SUIT/SUIT-Bold.woff2') format('woff2'),
-		url('font/SUIT/SUIT-Bold.otf') format('opentype');
+  font-family: "SUIT";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/SUIT/SUIT-Bold.woff2") format("woff2"), url("font/SUIT/SUIT-Bold.otf") format("opentype");
 }
-
 .f_suit {
-	font-family: "SUIT";
-	font-weight: 800;
+  font-family: "SUIT";
+  font-weight: 800;
 }
 
 /* Noto Sans */
 @font-face {
-	font-family: 'Noto Sans';
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/Noto-Sans/NotoSansKR-Bold.woff') format('woff'),
-		url('font/Noto-Sans/NotoSansKR-Bold.otf') format('opentype');
+  font-family: "Noto Sans";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/Noto-Sans/NotoSansKR-Bold.woff") format("woff"), url("font/Noto-Sans/NotoSansKR-Bold.otf") format("opentype");
 }
 .f_noto_sans {
-	font-family: 'Noto Sans';
-	font-weight: 800;
+  font-family: "Noto Sans";
+  font-weight: 800;
 }
 
 /* Cinzel */
 @font-face {
-	font-family: 'Cinzel';
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/cinzel/Cinzel-Regular.woff') format('woff'),
-		url('font/cinzel/Cinzel-Regular.otf') format('opentype');
+  font-family: "Cinzel";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/cinzel/Cinzel-Regular.woff") format("woff"), url("font/cinzel/Cinzel-Regular.otf") format("opentype");
 }
 @font-face {
-	font-family: 'Cinzel';
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-	src: url('font/cinzel/Cinzel-Bold.woff') format('woff'),
-		url('font/cinzel/Cinzel-Bold.otf') format('opentype');
+  font-family: "Cinzel";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/cinzel/Cinzel-Bold.woff") format("woff"), url("font/cinzel/Cinzel-Bold.otf") format("opentype");
 }
 .f_cinzel {
-	font-family: 'Cinzel';
-	font-weight: 600;
+  font-family: "Cinzel";
+  font-weight: 600;
 }
 
 /* Thesignature */
 @font-face {
-	font-family: 'Thesignature';
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-	src: 
-		url('font/Thesignature/Thesignature.otf') format('opentype');
+  font-family: "Thesignature";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/Thesignature/Thesignature.otf") format("opentype");
 }
 .f_thesignature {
-	font-family: 'Thesignature';
-	font-weight: 600;
+  font-family: "Thesignature";
+  font-weight: 600;
 }
-
-

@@ -284,7 +284,7 @@ window.onload = function(){
 		story_sd.disable();
 
 		$(".story_sd").swipe( {
-			swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+			swipe:function(event, direction, distances duration, fingerCount, fingerData) {
 				if (direction == 'down') {
 					story_sd.slidePrev();
 				}
